@@ -1,0 +1,45 @@
+﻿<Window x:Class="MDK8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MDK8"
+        mc:Ignorable="d"
+        Title="MDK8" Height="450" Width="800" ResizeMode="NoResize">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0,2" StartPoint="1,1">
+            <GradientStop Color="DarkSalmon" Offset="1"/>
+            <GradientStop Color="DarkKhaki" Offset="0"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Menu Margin="0,0,0,383" Background="DarkKhaki">
+            <MenuItem Header="Выход" ToolTip="Кнопка выход" Click="Exit"/>
+            <MenuItem Header="О программе" ToolTip="Кнопка о программе " Click="About"/>
+        </Menu>
+
+        <ListBox Margin="10,67,597,183" ToolTip="Поле вывода и выбора чисел геометрической прогресии" x:Name="Listok"/>
+
+        <Button Content="Пуск" ToolTip="Кнопка запуска программы"  Click="Пуск" HorizontalAlignment="Left" Margin="303,132,0,0" VerticalAlignment="Top" Width="171" Height="40"/>
+        <Button Content="Сравнить" ToolTip="Кнопка сравнения "  Click="Сравнить" HorizontalAlignment="Left" Margin="303,67,0,0" VerticalAlignment="Top" Width="171" Height="40"/>
+        <Button Content="Очистить" Click="Clear" ToolTip="Кнопка очистки полей" HorizontalAlignment="Left" Margin="303,199,0,0" VerticalAlignment="Top" Width="171" Height="40"/>
+
+        <TextBox HorizontalAlignment="Left" ToolTip="Поле для ввода знаменателя геометрической прогресии"  Margin="10,316,0,0" TextWrapping="Wrap" x:Name="tb1" VerticalAlignment="Top" Width="142" Height="26"/>
+        <TextBox HorizontalAlignment="Left" ToolTip="Поле для ввода длинны геометрической прогресии" Margin="10,368,0,0" TextWrapping="Wrap" x:Name="tb2" VerticalAlignment="Top" Width="142" Height="27"/>
+        <TextBox HorizontalAlignment="Left" Margin="10,272,0,0" ToolTip="Поле для ввода  первого числа геометрической прогресии" TextWrapping="Wrap" x:Name="tb3" VerticalAlignment="Top" Width="142" Height="23"/>
+        <Label Content="Шаг ГП" ToolTip="Названние поля" HorizontalAlignment="Left" Margin="10,290,0,0" VerticalAlignment="Top" Width="115"/>
+        <Label Content="Длинна ГП" ToolTip="Названние поля" HorizontalAlignment="Left" Margin="10,342,0,0" VerticalAlignment="Top" Width="115"/>
+        <Label Content="Первое число ГП" ToolTip="Названние поля" HorizontalAlignment="Left" Margin="10,241,0,0" VerticalAlignment="Top" Width="115"/>
+        <Label Content=" Первая ГП" ToolTip="Названние поля" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="187"/>
+        <ListBox Margin="597,67,10,183" ToolTip="Поле вывода геометрической прорессии" x:Name="Listok1"/>
+        <TextBox HorizontalAlignment="Left" Margin="597,267,0,0" ToolTip="Поле для ввода  первого числа геометрической прогресии" TextWrapping="Wrap" x:Name="tb4" VerticalAlignment="Top" Width="142" Height="23"/>
+        <TextBox HorizontalAlignment="Left" ToolTip="Поле для ввода знаменателя геометрической прогресии"  Margin="597,316,0,0" TextWrapping="Wrap" x:Name="tb5" VerticalAlignment="Top" Width="142" Height="26"/>
+        <Label Content="Первое число ГП" ToolTip="Названние поля" HorizontalAlignment="Left" Margin="597,241,0,0" VerticalAlignment="Top" Width="115"/>
+        <Label Content="Шаг ГП" ToolTip="Названние поля" HorizontalAlignment="Left" Margin="597,290,0,0" VerticalAlignment="Top" Width="115"/>
+        <Label Content="Длинна ГП" ToolTip="Названние поля" HorizontalAlignment="Left" Margin="597,342,0,0" VerticalAlignment="Top" Width="115"/>
+        <TextBox HorizontalAlignment="Left" ToolTip="Поле для ввода длинны геометрической прогресии" Margin="597,368,0,0" TextWrapping="Wrap" x:Name="tb6" VerticalAlignment="Top" Width="142" Height="27"/>
+        <Label Content=" Вторая ГП" ToolTip="Названние поля" HorizontalAlignment="Left" Margin="597,36,0,0" VerticalAlignment="Top" Width="187"/>
+
+
+    </Grid>
+</Window>
